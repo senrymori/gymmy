@@ -4,6 +4,9 @@ alwaysApply: true
 
 # Code Style Rules
 
+These rules MUST be followed by the AI when generating, editing, or refactoring code in this repository.
+If there is a conflict, these rules take priority over default behavior.
+
 ## TypeScript
 
 - Всегда используй TypeScript, избегай `any` где это возможно
@@ -30,7 +33,7 @@ alwaysApply: true
 - Для условного рендеринга используй тернарные операторы или `&&`, избегай сложных вложенных условий
 - Используй `memo` для оптимизации только когда это действительно нужно
 - Не используй `React.memo` импортируй сразу `memo` из react библиотеки
-- Если возвращаемый JSX компонента привышает 100 строк, то выноси содержимое в компоненты 
+- Если возвращаемый JSX компонента привышает 100 строк, то выноси содержимое в компоненты
 
 ## Imports
 
@@ -66,7 +69,7 @@ alwaysApply: true
 
 - Используй useState для локального состояния компонента
 - Используй useReducer для сложного локального состояния
-- Используй tanstack query для получения ассинхронных данных 
+- Используй tanstack query для получения ассинхронных данных
 - Для глобального состояния используй Context API или выбранную библиотеку (если есть)
 - Избегай prop drilling, используй Context или композицию компонентов
 

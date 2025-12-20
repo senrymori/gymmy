@@ -1,9 +1,12 @@
 import { View, Text, StyleSheet } from 'react-native';
+import { useLanguage } from '@providers/language/LanguageProvider';
 
 export const ProgressScreen = () => {
+  const { translations } = useLanguage();
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Прогресс</Text>
+      <Text style={styles.title}>{translations.screens.progress.title}</Text>
     </View>
   );
 };

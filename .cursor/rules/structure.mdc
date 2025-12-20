@@ -2,6 +2,11 @@
 alwaysApply: true
 ---
 
+You are an AI assistant working in this repository.
+The following rules define the REQUIRED project structure.
+You MUST strictly follow these rules when creating, moving, or refactoring files and folders.
+Do NOT invent alternative structures.
+
 # Project Structure Rules
 
 ## Общая структура `src/`
@@ -11,11 +16,13 @@ alwaysApply: true
 ## Папки и их назначение
 
 ### `src/assets/`
+
 - **`fonts/`** - файлы шрифтов (.ttf, .otf)
 - **`images/`** - изображения, иконки, статические ресурсы
 - Используй осмысленные имена файлов: `logo-primary.png`, `icon-user.svg`
 
 ### `src/components/`
+
 - Переиспользуемые UI компоненты (могут содержать модели из бизнес логики)
 - **`ui-kits/`** - системные UI компоненты (Button, Input, Switch и т.д.), не содержат моделей из бизнес логики
 - Компоненты группируются по функциональности в подпапки если их много
@@ -23,35 +30,41 @@ alwaysApply: true
 - Пример: `components/Button/Button.tsx`, `components/Button/button-consts.ts`,`components/Button/button-utils.ts`, `components/Button/button-types.ts`
 
 ### `src/constants/`
-- Глобальные константы приложения не относящиеся к функционалу конкретного экрана или сущности, а имеющие отношение к приложению в целом или полезным ресурсам 
-- `platform-consts.ts` - все что относится к определению платформы и версий 
+
+- Глобальные константы приложения не относящиеся к функционалу конкретного экрана или сущности, а имеющие отношение к приложению в целом или полезным ресурсам
+- `platform-consts.ts` - все что относится к определению платформы и версий
 - `permissions-consts` - все константы, что связаны с разрешениями на устройствах (доступ к файлам и тд)
-- `dropdown-options` - все константы nameOptions для Dropdown инпутов в приложении 
+- `dropdown-options` - все константы nameOptions для Dropdown инпутов в приложении
 
 ### `src/hooks/`
+
 - Кастомные React хуки
 - Именование: `use` + название (`useAuth.ts`, `useWorkout.ts`)
 - Один хук = один файл
 - Хуки для глобальных событий как таймер или пуши, но не для бизнес-логики (бизнес-логика внутри родительских экранов)
 
 ### `src/navigation/`
+
 - Конфигурация навигации (React Navigation)
 - Типы для навигации
 - Навигационные утилиты
 - Структура зависит от выбранной библиотеки навигации
 
 ### `src/providers/`
+
 - React Context провайдеры
 - Глобальные провайдеры состояния, темы, аутентификации
 - Один провайдер = один файл или папка если сложный
 
 ### `src/screens/`
+
 - Экраны приложения (страницы)
 - Группируй по фичам/доменам: `auth/`, `workout/`, `profile/`
 - Каждый экран в своей папке если содержит несколько файлов
 - Пример: `screens/auth/LoginScreen.tsx`, `screens/workout/WorkoutListScreen.tsx`
 
 ### `src/server/`
+
 - Backend логика, если используется локальный сервер
 - **`service/`** - сервисные классы для бизнес-логики
 - **`typeorm/`** - TypeORM конфигурация и модели
@@ -60,6 +73,7 @@ alwaysApply: true
 - Используй для серверной части если приложение включает локальный backend
 
 ### `src/utils/`
+
 - Утилитарные функции
 - Хелперы, форматирование, валидация, трансформации данных
 - Группируй по функциональности: `date-utils.ts`, `validation-utils.ts`, `common-utils.ts`
@@ -68,37 +82,41 @@ alwaysApply: true
 ## Правила организации файлов
 
 ### Именование файлов
+
 - Компоненты: `ComponentName.tsx`
 - Хуки: `useHookName.ts`
 - Утилиты: `name-utils.ts` или `component-name-utils.ts` если специфичны для компонента
 - Типы: `name-types.ts` или `component-name-types.ts` если специфичны для компонента
-- Константы: `name-consts.ts` или `component-name-consts.ts`  если специфичны для компонента 
+- Константы: `name-consts.ts` или `component-name-consts.ts` если специфичны для компонента
 
 ### Структура компонента
+
 Если компонент сложный и содержит несколько файлов:
+
 ```
 components/
   UserCard/
     UserCard.tsx
     user-card-utils.ts
     user-card-consts.ts
-    user-card-types.ts 
+    user-card-types.ts
 ```
 
 Для простых компонентов - один файл:
+
 ```
 components/
   Button.tsx
 ```
 
 ### Импорты
-- Используй относительные импорты от `src/` или абсолютные если настроены алиасы
-- Пример: `import { Button } from '../components/Button'` или `import { Button } from '@components/Button'`
-- Избегай глубокой вложенности импортов (`../../../../`)
 
+- Используй относительные импорты от `src/` или абсолютные если настроены алиасы (согласно babel конфигу)
+- Пример: `import { Button } from '../components/Button'` или `import { Button } from '@components/Button'`
+- Избегай глубокой вложенности импортов (`../../../../`) - для этого есть алиасы (согласно babel конфигу)
 
 ## Запрещенные практики
 
-- Не создавай index файлы  
+- Не создавай index файлы
 - Не создавай файлы в корне `src/`, все должно быть в соответствующих папках
 - Не дублируй код, выноси общее в утилиты или компоненты

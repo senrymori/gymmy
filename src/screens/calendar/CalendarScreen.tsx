@@ -1,9 +1,12 @@
 import { View, Text, StyleSheet } from 'react-native';
+import { useLanguage } from '@providers/language/LanguageProvider';
 
 export const CalendarScreen = () => {
+  const { translations } = useLanguage();
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Календарь</Text>
+      <Text style={styles.title}>{translations.screens.calendar.title}</Text>
     </View>
   );
 };

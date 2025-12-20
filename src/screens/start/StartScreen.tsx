@@ -1,9 +1,12 @@
 import { View, Text, StyleSheet } from 'react-native';
+import { useLanguage } from '@providers/language/LanguageProvider';
 
 export const StartScreen = () => {
+  const { translations } = useLanguage();
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Старт</Text>
+      <Text style={styles.title}>{translations.screens.start.title}</Text>
     </View>
   );
 };

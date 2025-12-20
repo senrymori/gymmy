@@ -1,9 +1,12 @@
 import { View, Text, StyleSheet } from 'react-native';
+import { useLanguage } from '@providers/language/LanguageProvider';
 
 export const WorkoutsScreen = () => {
+  const { translations } = useLanguage();
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Тренировки</Text>
+      <Text style={styles.title}>{translations.screens.workouts.title}</Text>
     </View>
   );
 };

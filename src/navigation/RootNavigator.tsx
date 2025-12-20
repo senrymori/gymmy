@@ -1,5 +1,5 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { TabNavigator } from './TabNavigator';
+import { TabNavigator } from '@navigation/TabNavigator';
 
 export const RootNavigator = () => {
   return (

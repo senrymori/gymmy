@@ -1392,7 +1392,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.25.0":
+"@babel/runtime@npm:^7.25.0, @babel/runtime@npm:^7.27.6, @babel/runtime@npm:^7.28.4":
   version: 7.28.4
   resolution: "@babel/runtime@npm:7.28.4"
   checksum: 10c0/792ce7af9750fb9b93879cc9d1db175701c4689da890e6ced242ea0207c9da411ccf16dc04e689cc01158b28d7898c40d75598f4559109f761c12ce01e959bf7
@@ -5048,11 +5048,15 @@ __metadata:
     "@types/react-test-renderer": "npm:^19.1.0"
     babel-plugin-module-resolver: "npm:^5.0.2"
     eslint: "npm:^8.19.0"
+    i18next: "npm:^25.7.3"
     jest: "npm:^29.6.3"
     prettier: "npm:2.8.8"
     react: "npm:19.2.0"
+    react-i18next: "npm:^16.5.0"
     react-native: "npm:0.83.0"
     react-native-gesture-handler: "npm:^2.30.0"
+    react-native-localization: "npm:^2.3.2"
+    react-native-localize: "npm:^3.6.0"
     react-native-safe-area-context: "npm:^5.5.2"
     react-native-screens: "npm:^4.19.0"
     react-test-renderer: "npm:19.2.0"
@@ -5172,6 +5176,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"html-parse-stringify@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "html-parse-stringify@npm:3.0.1"
+  dependencies:
+    void-elements: "npm:3.1.0"
+  checksum: 10c0/159292753d48b84d216d61121054ae5a33466b3db5b446e2ffc093ac077a411a99ce6cbe0d18e55b87cf25fa3c5a86c4d8b130b9719ec9b66623259000c72c15
+  languageName: node
+  linkType: hard
+
 "http-cache-semantics@npm:^4.1.1":
   version: 4.2.0
   resolution: "http-cache-semantics@npm:4.2.0"
@@ -5229,6 +5242,20 @@ __metadata:
   version: 2.1.0
   resolution: "human-signals@npm:2.1.0"
   checksum: 10c0/695edb3edfcfe9c8b52a76926cd31b36978782062c0ed9b1192b36bebc75c4c87c82e178dfcb0ed0fc27ca59d434198aac0bd0be18f5781ded775604db22304a
+  languageName: node
+  linkType: hard
+
+"i18next@npm:^25.7.3":
+  version: 25.7.3
+  resolution: "i18next@npm:25.7.3"
+  dependencies:
+    "@babel/runtime": "npm:^7.28.4"
+  peerDependencies:
+    typescript: ^5
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10c0/0b10452c26d6526bbfa8f0fb76241f5e17f0dc08d9b9cc9810bc3103047a3656ec6482b170a86a408a49178af5683a4b88b43986580c5f95f497d4afc9719088
   languageName: node
   linkType: hard
 
@@ -6392,6 +6419,13 @@ __metadata:
   version: 1.2.4
   resolution: "lines-and-columns@npm:1.2.4"
   checksum: 10c0/3da6ee62d4cd9f03f5dc90b4df2540fb85b352081bee77fe4bbcd12c9000ead7f35e0a38b8d09a9bb99b13223446dd8689ff3c4959807620726d788701a83d2d
+  languageName: node
+  linkType: hard
+
+"localized-strings@npm:^0.2.0":
+  version: 0.2.4
+  resolution: "localized-strings@npm:0.2.4"
+  checksum: 10c0/d8241462af34b43eb2886e30836f797272e1c39777f7b9261217c095f8324f0b2668a1dcd478377f3a15e9c433c88dfebe89821b74c9db3a115b4c899a7e180a
   languageName: node
   linkType: hard
 
@@ -7673,6 +7707,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-i18next@npm:^16.5.0":
+  version: 16.5.0
+  resolution: "react-i18next@npm:16.5.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.27.6"
+    html-parse-stringify: "npm:^3.0.1"
+    use-sync-external-store: "npm:^1.6.0"
+  peerDependencies:
+    i18next: ">= 25.6.2"
+    react: ">= 16.8.0"
+    typescript: ^5
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+    typescript:
+      optional: true
+  checksum: 10c0/33ee736f5df01fbc3922f1c1b1e9f768c4930364a9f9695b5dcdf8ec997d8eee71c0fc7f2ccbd75f0d98aa2915890c4554fa4a6afe129582de50af84b1d959d8
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1, react-is@npm:^16.7.0":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -7694,6 +7750,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-localization@npm:^1.0.17":
+  version: 1.0.19
+  resolution: "react-localization@npm:1.0.19"
+  dependencies:
+    localized-strings: "npm:^0.2.0"
+  peerDependencies:
+    react: ^18.0.0 || ^17.0.0 || ^16.0.0 || ^15.6.0
+  checksum: 10c0/db675ac71eb9989f8a3c8c677dc8fa6b356214948023fa0acc1db34052e63fab6e65def7a0dd06cc36183bb33f9b947b3c6df4f13f88f984dd3a7c8a377b3bb4
+  languageName: node
+  linkType: hard
+
 "react-native-gesture-handler@npm:^2.30.0":
   version: 2.30.0
   resolution: "react-native-gesture-handler@npm:2.30.0"
@@ -7705,6 +7772,39 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 10c0/26b94b0f97433fc6fb5b1c196ef29fce4f5a66c77fabb1bc33db91099357fbd44a5220783fcbb91d42700bcd578f2fd114314029d9e0d4674878767d9b7f5df6
+  languageName: node
+  linkType: hard
+
+"react-native-localization@npm:^2.3.2":
+  version: 2.3.2
+  resolution: "react-native-localization@npm:2.3.2"
+  dependencies:
+    react-localization: "npm:^1.0.17"
+  peerDependencies:
+    react: ">15.6.0"
+    react-native: ">0.64"
+    react-native-windows: ">0.64"
+  peerDependenciesMeta:
+    react-native-windows:
+      optional: true
+  checksum: 10c0/28d092420ec843da9cb8a7e1eb1263c3cb53099d14b26c5f7a41a5ad7c423e3ef7fbbcd9218c669d527e6143f9defe7e7bc0e4767c58a41397c5da220a3d4a2e
+  languageName: node
+  linkType: hard
+
+"react-native-localize@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "react-native-localize@npm:3.6.0"
+  peerDependencies:
+    "@expo/config-plugins": "*"
+    react: "*"
+    react-native: "*"
+    react-native-macos: "*"
+  peerDependenciesMeta:
+    "@expo/config-plugins":
+      optional: true
+    react-native-macos:
+      optional: true
+  checksum: 10c0/3ab63261152f56a9ef9d7413f206b50615483d2fa2f0f07b4fda34b3f95bd66d54c1ec35c8eb445326252855db0299ff6fdb7167422711bb0337994d9605a94d
   languageName: node
   linkType: hard
 
@@ -8987,7 +9087,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-sync-external-store@npm:^1.5.0":
+"use-sync-external-store@npm:^1.5.0, use-sync-external-store@npm:^1.6.0":
   version: 1.6.0
   resolution: "use-sync-external-store@npm:1.6.0"
   peerDependencies:
@@ -9032,6 +9132,13 @@ __metadata:
   version: 1.0.1
   resolution: "vlq@npm:1.0.1"
   checksum: 10c0/a8ec5c95d747c840198f20b4973327fa317b98397f341e7a2f352bfcf385aeb73c0eea01cc6d406c20169298375397e259efc317aec53c8ffc001ec998204aed
+  languageName: node
+  linkType: hard
+
+"void-elements@npm:3.1.0":
+  version: 3.1.0
+  resolution: "void-elements@npm:3.1.0"
+  checksum: 10c0/0b8686f9f9aa44012e9bd5eabf287ae0cde409b9a2854c5a2335cb83920c957668ac5876e3f0d158dd424744ac411a7270e64128556b451ed3bec875ef18534d
   languageName: node
   linkType: hard
 

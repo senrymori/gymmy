@@ -1,14 +1,17 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { CalendarScreen } from '../screens/calendar/CalendarScreen';
-import { WorkoutsScreen } from '../screens/workouts/WorkoutsScreen';
-import { StartScreen } from '../screens/start/StartScreen';
-import { ProgressScreen } from '../screens/progress/ProgressScreen';
-import { ProfileScreen } from '../screens/profile/ProfileScreen';
+import { CalendarScreen } from '@screens/calendar/CalendarScreen';
+import { WorkoutsScreen } from '@screens/workouts/WorkoutsScreen';
+import { StartScreen } from '@screens/start/StartScreen';
+import { ProgressScreen } from '@screens/progress/ProgressScreen';
+import { ProfileScreen } from '@screens/profile/ProfileScreen';
 import { RootTabParamList } from './navigation-types';
+import { useLanguage } from '@providers/language/LanguageProvider';
 
 const Tab = createBottomTabNavigator<RootTabParamList>();
 
 export const TabNavigator = () => {
+  const { translations } = useLanguage();
+
   return (
     <Tab.Navigator
       screenOptions={{
@@ -20,35 +23,35 @@ export const TabNavigator = () => {
         name="Calendar"
         component={CalendarScreen}
         options={{
-          tabBarLabel: 'Календарь',
+          tabBarLabel: translations.tabs.calendar,
         }}
       />
       <Tab.Screen
         name="Workouts"
         component={WorkoutsScreen}
         options={{
-          tabBarLabel: 'Тренировки',
+          tabBarLabel: translations.tabs.workouts,
         }}
       />
       <Tab.Screen
         name="Start"
         component={StartScreen}
         options={{
-          tabBarLabel: 'Старт',
+          tabBarLabel: translations.tabs.start,
         }}
       />
       <Tab.Screen
         name="Progress"
         component={ProgressScreen}
         options={{
-          tabBarLabel: 'Прогресс',
+          tabBarLabel: translations.tabs.progress,
         }}
       />
       <Tab.Screen
         name="Profile"
         component={ProfileScreen}
         options={{
-          tabBarLabel: 'Профиль',
+          tabBarLabel: translations.tabs.profile,
         }}
       />
     </Tab.Navigator>
