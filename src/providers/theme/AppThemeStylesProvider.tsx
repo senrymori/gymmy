@@ -19,7 +19,7 @@ function createThemeStyles(colors: AppThemeColors) {
     mainBlueBG: { backgroundColor: colors.blue500 },
     mainBlueBorder: { borderColor: colors.blue500 },
 
-    // Text styles
+    // Typography styles
     textMain: { color: colors.text },
     textSecondary: { color: colors.textSecondary },
     textTertiary: { color: colors.textTertiary },

@@ -1,4 +1,4 @@
-import { TextWeight } from './text-types';
+import { TextWeight } from './typography-types.ts';
 
 // Mapping weight number to font family name
 export const weightToFontFamily: Record<TextWeight, string> = {

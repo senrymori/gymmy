@@ -38,7 +38,7 @@ export const darkColors: AppThemeColors = {
   backgroundSecondary: '#1F2937',
   backgroundTertiary: '#374151',
 
-  // Text colors
+  // Typography colors
   text: '#F9FAFB',
   textSecondary: '#D1D5DB',
   textTertiary: '#9CA3AF',
