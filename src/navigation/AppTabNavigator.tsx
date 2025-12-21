@@ -1,15 +1,15 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { CalendarScreen } from '@screens/calendar/CalendarScreen';
-import { WorkoutsScreen } from '@screens/workouts/WorkoutsScreen';
-import { StartScreen } from '@screens/start/StartScreen';
-import { ProgressScreen } from '@screens/progress/ProgressScreen';
-import { ProfileScreen } from '@screens/profile/ProfileScreen';
-import { RootTabParamList } from './navigation-types';
-import { useLanguage } from '@providers/language/LanguageProvider';
+import { CalendarScreen } from '@screens/calendar/CalendarScreen.tsx';
+import { WorkoutsScreen } from '@screens/workouts/WorkoutsScreen.tsx';
+import { StartScreen } from '@screens/start/StartScreen.tsx';
+import { ProgressScreen } from '@screens/progress/ProgressScreen.tsx';
+import { ProfileScreen } from '@screens/profile/ProfileScreen.tsx';
+import { RootTabParamList } from './navigation-types.ts';
+import { useLanguage } from '@providers/language/LanguageProvider.tsx';
 
 const Tab = createBottomTabNavigator<RootTabParamList>();
 
-export const TabNavigator = () => {
+export const AppTabNavigator = () => {
   const { translations } = useLanguage();
 
   return (
@@ -57,4 +57,3 @@ export const TabNavigator = () => {
     </Tab.Navigator>
   );
 };
-

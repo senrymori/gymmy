@@ -1,21 +1,9 @@
-import { StatusBar } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { RootNavigator } from '@navigation/RootNavigator';
+import { AppContainer } from '@navigation/AppContainer.tsx';
 import { LanguageProvider } from '@providers/language/LanguageProvider';
-import { ThemeConfigProvider, useThemeConfig } from '@providers/theme/ThemeConfigProvider';
+import { ThemeConfigProvider } from '@providers/theme/ThemeConfigProvider';
 import { AppThemeColorsProvider } from '@providers/theme/AppThemeColorsProvider';
 import { AppThemeStylesProvider } from '@providers/theme/AppThemeStylesProvider';
-
-function AppContent() {
-  const { isDark } = useThemeConfig();
-
-  return (
-    <>
-      <StatusBar barStyle={isDark ? 'light-content' : 'dark-content'} />
-      <RootNavigator />
-    </>
-  );
-}
 
 function App() {
   return (
@@ -24,7 +12,7 @@ function App() {
         <AppThemeColorsProvider>
           <AppThemeStylesProvider>
             <LanguageProvider>
-              <AppContent />
+              <AppContainer />
             </LanguageProvider>
           </AppThemeStylesProvider>
         </AppThemeColorsProvider>
