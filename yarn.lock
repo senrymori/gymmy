@@ -5057,6 +5057,8 @@ __metadata:
     react-native-gesture-handler: "npm:^2.30.0"
     react-native-localization: "npm:^2.3.2"
     react-native-localize: "npm:^3.6.0"
+    react-native-mmkv: "npm:^4.1.0"
+    react-native-nitro-modules: "npm:^0.31.10"
     react-native-safe-area-context: "npm:^5.5.2"
     react-native-screens: "npm:^4.19.0"
     react-test-renderer: "npm:19.2.0"
@@ -7805,6 +7807,27 @@ __metadata:
     react-native-macos:
       optional: true
   checksum: 10c0/3ab63261152f56a9ef9d7413f206b50615483d2fa2f0f07b4fda34b3f95bd66d54c1ec35c8eb445326252855db0299ff6fdb7167422711bb0337994d9605a94d
+  languageName: node
+  linkType: hard
+
+"react-native-mmkv@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "react-native-mmkv@npm:4.1.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+    react-native-nitro-modules: "*"
+  checksum: 10c0/af69e58df6d78366b93cbd055ab810201f2e7403a09b448f218014eba6695af10569eb64e6ed81c21b9dbb976c9d7c5fb76650a4de2304731956f42717d80804
+  languageName: node
+  linkType: hard
+
+"react-native-nitro-modules@npm:^0.31.10":
+  version: 0.31.10
+  resolution: "react-native-nitro-modules@npm:0.31.10"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/0acc6ca5f12e24a6601e682070f257a771b95214c11fba911b342af705071234544c93076900f43400c8ae2f1a6738011b120e4425813968102997860ffd7626
   languageName: node
   linkType: hard
 
