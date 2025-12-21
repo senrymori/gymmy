@@ -40,7 +40,7 @@ If there is a conflict, these rules take priority over default behavior.
 - Не используй `React.memo` импортируй сразу `memo` из react библиотеки
 - Если возвращаемый JSX компонента привышает 100 строк, то выноси содержимое в компоненты
 - Не делай такую деструкторизацию в пропсах: `function ({ example1, example2, ...rest })`, лучше делай так `const { example1, example2, ...rest } = props`
-- Избегай inline свойств компонентов, не пиши `<Example field="test">`, всегда экранируй `<Example field={'test'}`
+- Не используй строковые литералы в JSX без фигурных скобок: вместо `<Example field="test">` нужно всегда писать `<Example field={'test'}`. Это правило распространяется на все props, передаваемые компонентам: значения всегда должны быть внутри фигурных скобок.
 
 ## Imports
 

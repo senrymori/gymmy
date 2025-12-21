@@ -37,7 +37,7 @@ export const IconEnum = {
   KabaddiFill: '󰀗',
   LowKickFill: '󰀘',
   MedalFill: '󰀙',
-  MotorshipFill: '󰀚',
+  MotorFill: '󰀚',
   ProgressFill: '󰀛',
   SettingsFill: '󰀜',
   SoccerFill: '󰀝',
