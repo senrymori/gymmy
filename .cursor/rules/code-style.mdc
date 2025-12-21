@@ -14,6 +14,7 @@ If there is a conflict, these rules take priority over default behavior.
 - Для React компонентов используй функциональные компоненты с TypeScript
 - Используй интерфейсы для пропсов компонентов, типы для утилит и сложных структур
 - Применяй `type` для union types, `interface` для объектов и компонентов
+- Если код пишется не внутри класса/компонента, то создавай function verbName (вместо стрелочных функций)
 
 ## Naming Conventions
 
@@ -28,6 +29,8 @@ If there is a conflict, these rules take priority over default behavior.
 
 ## React Native Components
 
+- Когда объявляешь компонент, указывай ему сразу типа `FC` из react (пример: `const ComponentName: FC<Props> = functions(props) {}`)
+- Если компонент ожидает только children (часто в контекстах), то не надо создавать для него отдельный тип, можешь использовать PropsWithChildren (пример: `Provider: FC<PropsWithChildren> = function ({ children })`)
 - Используй функциональные компоненты с хуками
 - Разделяй логику и представление: хуки для логики, компоненты для UI
 - Используй `StyleSheet.create` для стилей, избегай inline стилей кроме динамических значений (стили локальные для компонента не выносятся в отдельный файл)

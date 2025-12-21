@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext, useMemo, useState } from 'react';
+import { createContext, FC, PropsWithChildren, useContext, useMemo, useState } from 'react';
 import { Locale, localizedStrings, Translations } from './localized-strings';
 import * as RNLocalize from 'react-native-localize';
 import { getStorageValue, setStorageValue, StorageKeysEnum } from '@utils/storage-utils';
@@ -11,11 +11,7 @@ interface LanguageContextValue {
 
 const LanguageContext = createContext<LanguageContextValue | undefined>(undefined);
 
-interface LanguageProviderProps {
-  children: ReactNode;
-}
-
-export const LanguageProvider = ({ children }: LanguageProviderProps) => {
+export const LanguageProvider: FC<PropsWithChildren> = function ({ children }) {
   const [currentLanguage, setCurrentLanguage] = useState<Locale>(() => {
     const storedLanguage =
       getStorageValue(StorageKeysEnum.Language) ?? RNLocalize.getLocales()[0]?.languageCode ?? Locale.en;

@@ -4,6 +4,7 @@ export const storage = createMMKV();
 
 export const StorageKeysEnum = {
   Language: 'language',
+  Theme: 'theme',
 } as const;
 export type StorageKeysEnum = (typeof StorageKeysEnum)[keyof typeof StorageKeysEnum];
 
