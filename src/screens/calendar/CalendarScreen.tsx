@@ -1,12 +1,17 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useLanguage } from '@providers/language/LanguageProvider';
 
 export const CalendarScreen = () => {
-  const { translations } = useLanguage();
+  const { translations, setLanguage } = useLanguage();
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{translations.screens.calendar.title}</Text>
+      <TouchableOpacity
+        onPress={() => {
+          setLanguage('kk');
+        }}>
+        <Text style={styles.title}>{translations.screens.calendar.title}</Text>
+      </TouchableOpacity>
     </View>
   );
 };
