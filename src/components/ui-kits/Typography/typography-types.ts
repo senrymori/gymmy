@@ -1,5 +1,6 @@
 import { TextProps as RNTextProps } from 'react-native';
 import { AppThemeColors } from '@providers/theme/colors/light-colors.ts';
+import { IconEnum } from './typography-consts.ts';
 
 export type TextAlign = 'left' | 'center' | 'right';
 
@@ -11,11 +12,14 @@ export type TextColorVariant = 'text' | 'textSecondary' | 'textTertiary';
 
 export type TextColorKey = keyof AppThemeColors;
 
+export type IconKey = keyof typeof IconEnum;
+
 export interface TextProps extends Omit<RNTextProps, 'style'> {
   align?: TextAlign;
   size?: TextSize;
   weight?: TextWeight;
   colorVariant?: TextColorVariant;
   color?: TextColorKey;
+  icon?: IconKey;
   style?: RNTextProps['style'];
 }

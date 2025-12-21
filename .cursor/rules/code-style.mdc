@@ -15,6 +15,7 @@ If there is a conflict, these rules take priority over default behavior.
 - Используй интерфейсы для пропсов компонентов, типы для утилит и сложных структур
 - Применяй `type` для union types, `interface` для объектов и компонентов
 - Если код пишется не внутри класса/компонента, то создавай function verbName (вместо стрелочных функций)
+- Если создаешь переменную с типом `Record`, то нейминг должен начинаться с `record`, пример `const recordSize: Record<number, >`
 
 ## Naming Conventions
 
