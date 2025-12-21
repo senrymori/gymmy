@@ -4,8 +4,10 @@ import { StartScreen } from '@screens/start/StartScreen.tsx';
 import { ProgressScreen } from '@screens/progress/ProgressScreen.tsx';
 import { ProfileScreen } from '@screens/profile/ProfileScreen.tsx';
 import { useAppThemeColors } from '@providers/theme/AppThemeColorsProvider.tsx';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { RootTabParamList } from '@navigation/navigation-types.ts';
 
-import { BottomTab } from './Tab';
+export const BottomTab = createBottomTabNavigator<RootTabParamList>();
 
 export const AppTabNavigator = () => {
   const colors = useAppThemeColors();
