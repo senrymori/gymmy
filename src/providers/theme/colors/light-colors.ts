@@ -31,6 +31,30 @@ export const lightColors = {
   gray800: '#1F2937',
   gray900: '#111827',
 
+  // Rose colors (красно-розовый)
+  rose50: '#FFF1F2',
+  rose100: '#FFE4E6',
+  rose200: '#FECDD3',
+  rose300: '#FDA4AF',
+  rose400: '#FB7185',
+  rose500: '#F43F5E',
+  rose600: '#E11D48',
+  rose700: '#BE123C',
+  rose800: '#9F1239',
+  rose900: '#881337',
+
+  // Teal colors (тифони)
+  teal50: '#F0FDFA',
+  teal100: '#CCFBF1',
+  teal200: '#99F6E4',
+  teal300: '#5EEAD4',
+  teal400: '#2DD4BF',
+  teal500: '#14B8A6',
+  teal600: '#0D9488',
+  teal700: '#0F766E',
+  teal800: '#115E59',
+  teal900: '#134E4A',
+
   // Background colors
   background: '#FFFFFF',
   backgroundSecondary: '#F9FAFB',

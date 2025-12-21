@@ -12,14 +12,12 @@ export type TextColorVariant = 'text' | 'textSecondary' | 'textTertiary';
 
 export type TextColorKey = keyof AppThemeColors;
 
-export type IconKey = keyof typeof IconEnum;
-
 export interface TextProps extends Omit<RNTextProps, 'style'> {
   align?: TextAlign;
   size?: TextSize;
   weight?: TextWeight;
   colorVariant?: TextColorVariant;
   color?: TextColorKey;
-  icon?: IconKey;
+  icon?: IconEnum;
   style?: RNTextProps['style'];
 }

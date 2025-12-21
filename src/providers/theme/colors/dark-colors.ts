@@ -33,6 +33,30 @@ export const darkColors: AppThemeColors = {
   gray800: '#F3F4F6',
   gray900: '#F9FAFB',
 
+  // Rose colors (adjusted for dark)
+  rose50: '#881337',
+  rose100: '#9F1239',
+  rose200: '#BE123C',
+  rose300: '#E11D48',
+  rose400: '#F43F5E',
+  rose500: '#FB7185',
+  rose600: '#FDA4AF',
+  rose700: '#FECDD3',
+  rose800: '#FFE4E6',
+  rose900: '#FFF1F2',
+
+  // Teal colors (adjusted for dark)
+  teal50: '#134E4A',
+  teal100: '#115E59',
+  teal200: '#0F766E',
+  teal300: '#0D9488',
+  teal400: '#14B8A6',
+  teal500: '#2DD4BF',
+  teal600: '#5EEAD4',
+  teal700: '#99F6E4',
+  teal800: '#CCFBF1',
+  teal900: '#F0FDFA',
+
   // Background colors
   background: '#111827',
   backgroundSecondary: '#1F2937',
