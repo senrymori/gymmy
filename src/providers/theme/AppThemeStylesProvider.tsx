@@ -9,15 +9,15 @@ import { useAppThemeColors } from './AppThemeColorsProvider';
  */
 function createThemeStyles(colors: AppThemeColors) {
   return StyleSheet.create({
-    // Main secondary styles
-    mainSecondary: { color: colors.secondary500 },
-    mainSecondaryBG: { backgroundColor: colors.secondary500 },
-    mainSecondaryBorder: { borderColor: colors.secondary500 },
+    // Main gray styles
+    mainGray: { color: colors.gray500 },
+    mainGrayBG: { backgroundColor: colors.gray500 },
+    mainGrayBorder: { borderColor: colors.gray500 },
 
-    // Main primary styles
-    mainPrimary: { color: colors.primary500 },
-    mainPrimaryBG: { backgroundColor: colors.primary500 },
-    mainPrimaryBorder: { borderColor: colors.primary500 },
+    // Main blue styles
+    mainBlue: { color: colors.blue500 },
+    mainBlueBG: { backgroundColor: colors.blue500 },
+    mainBlueBorder: { borderColor: colors.blue500 },
 
     // Text styles
     textMain: { color: colors.text },

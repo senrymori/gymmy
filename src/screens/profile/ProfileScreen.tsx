@@ -1,12 +1,16 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { useLanguage } from '@providers/language/LanguageProvider';
+import { ThemeToggle } from '@components/ThemeToggle.tsx';
 
 export const ProfileScreen = () => {
   const { translations } = useLanguage();
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{translations.screens.profile.title}</Text>
+      <ThemeToggle />
+      <TouchableOpacity>
+        <Text style={styles.title}>{translations.screens.profile.title}</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -22,4 +26,3 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
-

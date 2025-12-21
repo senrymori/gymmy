@@ -1,59 +1,47 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { CalendarScreen } from '@screens/calendar/CalendarScreen.tsx';
 import { WorkoutsScreen } from '@screens/workouts/WorkoutsScreen.tsx';
 import { StartScreen } from '@screens/start/StartScreen.tsx';
 import { ProgressScreen } from '@screens/progress/ProgressScreen.tsx';
 import { ProfileScreen } from '@screens/profile/ProfileScreen.tsx';
-import { RootTabParamList } from './navigation-types.ts';
-import { useLanguage } from '@providers/language/LanguageProvider.tsx';
+import { useAppThemeColors } from '@providers/theme/AppThemeColorsProvider.tsx';
 
-const Tab = createBottomTabNavigator<RootTabParamList>();
+import { BottomTab } from './Tab';
 
 export const AppTabNavigator = () => {
-  const { translations } = useLanguage();
+  const colors = useAppThemeColors();
 
   return (
-    <Tab.Navigator
+    <BottomTab.Navigator
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: '#007AFF',
-        tabBarInactiveTintColor: '#8E8E93',
+        tabBarShowLabel: false,
+        tabBarActiveTintColor: colors.blue500,
+        tabBarInactiveTintColor: colors.textSecondary,
+        tabBarStyle: {
+          backgroundColor: colors.background,
+          borderTopColor: colors.border,
+        },
       }}>
-      <Tab.Screen
-        name="Calendar"
+      <BottomTab.Screen
+        name={'Calendar'}
         component={CalendarScreen}
-        options={{
-          tabBarLabel: translations.tabs.calendar,
-        }}
       />
-      <Tab.Screen
-        name="Workouts"
+      <BottomTab.Screen
+        name={'Workouts'}
         component={WorkoutsScreen}
-        options={{
-          tabBarLabel: translations.tabs.workouts,
-        }}
       />
-      <Tab.Screen
-        name="Start"
+      <BottomTab.Screen
+        name={'Start'}
         component={StartScreen}
-        options={{
-          tabBarLabel: translations.tabs.start,
-        }}
       />
-      <Tab.Screen
-        name="Progress"
+      <BottomTab.Screen
+        name={'Progress'}
         component={ProgressScreen}
-        options={{
-          tabBarLabel: translations.tabs.progress,
-        }}
       />
-      <Tab.Screen
-        name="Profile"
+      <BottomTab.Screen
+        name={'Profile'}
         component={ProfileScreen}
-        options={{
-          tabBarLabel: translations.tabs.profile,
-        }}
       />
-    </Tab.Navigator>
+    </BottomTab.Navigator>
   );
 };
