@@ -22,6 +22,7 @@ If there is a conflict, these rules take priority over default behavior.
 - **Утилиты и константы**: camelCase (`formatDate.ts`, `apiClient.ts`)
 - **Константы из env**: UPPER_SNAKE_CASE (`API_BASE_URL`)
 - **Обычные константы**: camelCase (`isIos`, `maxImageLimit`)
+- **Enum константы**: PascalCaseEnum (`isIos`, `maxImageLimit`)
 - **Файлы**: соответствуют экспортируемому элементу (компонент = PascalCase, хук = camelCase с use), если несколько экспортных элементов, то нейминг по общему содержимому и контексту, где файл создается
 - **Папки**: kebab-case для многословных названий (`personal-training/`, `workout-rework/`)
 

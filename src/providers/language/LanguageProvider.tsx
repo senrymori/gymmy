@@ -1,12 +1,12 @@
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { localizedStrings, Translations } from './localized-strings';
+import { createContext, ReactNode, useContext, useMemo, useState } from 'react';
+import { Locale, localizedStrings, Translations } from './localized-strings';
 import * as RNLocalize from 'react-native-localize';
-import { getStorageValue, setStorageValue, storageKeys } from '@utils/storage-utils';
+import { getStorageValue, setStorageValue, StorageKeysEnum } from '@utils/storage-utils';
 
 interface LanguageContextValue {
   translations: Translations;
-  setLanguage: (language: string) => void;
-  currentLanguage: string;
+  setLanguage: (language: Locale) => void;
+  currentLanguage: Locale;
 }
 
 const LanguageContext = createContext<LanguageContextValue | undefined>(undefined);
@@ -16,29 +16,23 @@ interface LanguageProviderProps {
 }
 
 export const LanguageProvider = ({ children }: LanguageProviderProps) => {
-  const [currentLanguage, setCurrentLanguage] = useState<string>(() => {
-    // Try to load saved language from storage
-    const storedLanguage = getStorageValue(storageKeys.LANGUAGE);
-    if (storedLanguage) {
-      return storedLanguage;
-    }
-    // Fallback to device language
-    const deviceLanguage = RNLocalize.getLocales()[0]?.languageCode || 'en';
-    return deviceLanguage;
+  const [currentLanguage, setCurrentLanguage] = useState<Locale>(() => {
+    const storedLanguage =
+      getStorageValue(StorageKeysEnum.Language) ?? RNLocalize.getLocales()[0]?.languageCode ?? Locale.en;
+    localizedStrings.setLanguage(storedLanguage);
+    return storedLanguage;
   });
 
-  useEffect(() => {
-    localizedStrings.setLanguage(currentLanguage);
-  }, [currentLanguage]);
-
-  const setLanguage = (language: string) => {
-    setCurrentLanguage(language);
+  const setLanguage = (language: Locale) => {
     localizedStrings.setLanguage(language);
-    setStorageValue(storageKeys.LANGUAGE, language);
+    setCurrentLanguage(language);
+    setStorageValue(StorageKeysEnum.Language, language);
   };
 
+  const translations = useMemo(() => localizedStrings as unknown as Translations, [currentLanguage]);
+
   const value: LanguageContextValue = {
-    translations: localizedStrings as unknown as Translations,
+    translations,
     setLanguage,
     currentLanguage,
   };

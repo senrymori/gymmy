@@ -14,6 +14,15 @@ const languages = {
   es,
   uk,
 };
+export const Locale = {
+  en: 'en',
+  ru: 'ru',
+  kk: 'kk',
+  fr: 'fr',
+  es: 'es',
+  uk: 'uk',
+}
+export type Locale = (typeof Locale)[keyof typeof Locale];
 
 export const localizedStrings = new LocalizedStrings(languages);
 

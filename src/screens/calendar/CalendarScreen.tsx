@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useLanguage } from '@providers/language/LanguageProvider';
+import { Locale } from '@providers/language/localized-strings.ts';
 
 export const CalendarScreen = () => {
   const { translations, setLanguage } = useLanguage();
@@ -8,7 +9,8 @@ export const CalendarScreen = () => {
     <View style={styles.container}>
       <TouchableOpacity
         onPress={() => {
-          setLanguage('kk');
+          console.log('onPress');
+          setLanguage(Locale.ru);
         }}>
         <Text style={styles.title}>{translations.screens.calendar.title}</Text>
       </TouchableOpacity>

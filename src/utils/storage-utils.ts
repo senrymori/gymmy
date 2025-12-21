@@ -2,19 +2,20 @@ import { createMMKV } from 'react-native-mmkv';
 
 export const storage = createMMKV();
 
-const STORAGE_KEYS = {
-  LANGUAGE: 'language',
+export const StorageKeysEnum = {
+  Language: 'language',
 } as const;
-
-export const storageKeys = STORAGE_KEYS;
+export type StorageKeysEnum = (typeof StorageKeysEnum)[keyof typeof StorageKeysEnum];
 
 /**
  * Get value from storage by key
  * @param key - storage key
  * @returns stored value or null if not set
  */
-export const getStorageValue = (key: string): string | null => {
-  return storage.getString(key) || null;
+export const getStorageValue = (key: string): null | string => {
+  const value = storage.getString(key);
+  if (!value) return null;
+  return value;
 };
 
 /**
