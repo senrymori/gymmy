@@ -18,20 +18,20 @@ export interface ButtonColorConfig {
 export const buttonColorConfigs: Record<ButtonColorVariant, ButtonColorConfig> = {
   blue: {
     active: {
-      background: 'blue400',
+      background: 'blue500',
       pressed: 'blue600',
       text: 'strongWhite',
     },
     disabled: {
-      background: 'blue700',
-      text: 'strongWhite',
+      background: 'blue300',
+      text: 'blue500',
     },
   },
   contrast: {
     active: {
-      background: 'gray50',
-      pressed: 'gray100',
-      text: 'text',
+      background: 'gray900',
+      pressed: 'gray700',
+      text: 'textAlternative',
     },
     disabled: {
       background: 'gray400',

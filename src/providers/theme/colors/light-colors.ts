@@ -64,6 +64,7 @@ export const lightColors = {
   text: '#111827',
   textSecondary: '#6B7280',
   textTertiary: '#9CA3AF',
+  textAlternative: '#F9FAFB',
 
   // Border colors
   border: '#E5E7EB',

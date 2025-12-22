@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		39EAF8DEBD0CE5B48FEA5DE1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
-		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		98885502C39FA4E156139522 /* libPods-gymmy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7241BEBE7CA7E83A74516398 /* libPods-gymmy.a */; };
-		A7615753BDD54195B78E3412 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B9B6C0813404BBBA3E10383 /* icomoon.ttf */; };
-		95E0C630F8E44AC6BBD58F24 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53FEF34804F64B29AF7821AB /* Roboto-Medium.ttf */; };
-		CE6D4D5D1C8D4F32BEFA4F9F /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5B9F9D89849E3BC74DBF7 /* Roboto-Light.ttf */; };
-		F98CC82EA1BD45A78B50B899 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C684F1FECBF406587411E09 /* Roboto-Regular.ttf */; };
+		42A391AB64209392846A09FB /* libPods-gymmy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B30BE6061D91E7CAB126B43 /* libPods-gymmy.a */; };
+		4798A59CEDC749499E6DA4EB /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B57A94EA819841A9AA36E86E /* Roboto-Black.ttf */; };
 		4B4C34E69CCF480187D151AD /* Roboto-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D69C84603D724BC1B89F95E8 /* Roboto-SemiBold.ttf */; };
 		61996AF281124207B3B819CB /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAC83FBC3AF44945BC2685BE /* Roboto-Bold.ttf */; };
-		4798A59CEDC749499E6DA4EB /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B57A94EA819841A9AA36E86E /* Roboto-Black.ttf */; };
+		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		95E0C630F8E44AC6BBD58F24 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53FEF34804F64B29AF7821AB /* Roboto-Medium.ttf */; };
+		A7615753BDD54195B78E3412 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B9B6C0813404BBBA3E10383 /* icomoon.ttf */; };
+		CE6D4D5D1C8D4F32BEFA4F9F /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5B9F9D89849E3BC74DBF7 /* Roboto-Light.ttf */; };
+		F98CC82EA1BD45A78B50B899 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C684F1FECBF406587411E09 /* Roboto-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,19 +26,19 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = gymmy/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = gymmy/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = gymmy/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		703C3A8237E3147EAFF031DF /* Pods-gymmy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gymmy.release.xcconfig"; path = "Target Support Files/Pods-gymmy/Pods-gymmy.release.xcconfig"; sourceTree = "<group>"; };
-		7241BEBE7CA7E83A74516398 /* libPods-gymmy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gymmy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9B6C0813404BBBA3E10383 /* icomoon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = icomoon.ttf; path = ../src/assets/fonts/icomoon/icomoon.ttf; sourceTree = "<group>"; };
+		3C684F1FECBF406587411E09 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		53FEF34804F64B29AF7821AB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		5B30BE6061D91E7CAB126B43 /* libPods-gymmy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gymmy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63845730EFCBA8B2928AE78B /* Pods-gymmy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gymmy.release.xcconfig"; path = "Target Support Files/Pods-gymmy/Pods-gymmy.release.xcconfig"; sourceTree = "<group>"; };
+		6813EBF583A975C339F99F92 /* Pods-gymmy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gymmy.debug.xcconfig"; path = "Target Support Files/Pods-gymmy/Pods-gymmy.debug.xcconfig"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = gymmy/AppDelegate.swift; sourceTree = "<group>"; };
+		7CB5B9F9D89849E3BC74DBF7 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../src/assets/fonts/roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = gymmy/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CF1C8CD1B32748667B5C402E /* Pods-gymmy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gymmy.debug.xcconfig"; path = "Target Support Files/Pods-gymmy/Pods-gymmy.debug.xcconfig"; sourceTree = "<group>"; };
+		B57A94EA819841A9AA36E86E /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../src/assets/fonts/roboto/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		D69C84603D724BC1B89F95E8 /* Roboto-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-SemiBold.ttf"; path = "../src/assets/fonts/roboto/Roboto-SemiBold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		1B9B6C0813404BBBA3E10383 /* icomoon.ttf */ = {isa = PBXFileReference; name = "icomoon.ttf"; path = "../src/assets/fonts/icomoon/icomoon.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		53FEF34804F64B29AF7821AB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7CB5B9F9D89849E3BC74DBF7 /* Roboto-Light.ttf */ = {isa = PBXFileReference; name = "Roboto-Light.ttf"; path = "../src/assets/fonts/roboto/Roboto-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3C684F1FECBF406587411E09 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D69C84603D724BC1B89F95E8 /* Roboto-SemiBold.ttf */ = {isa = PBXFileReference; name = "Roboto-SemiBold.ttf"; path = "../src/assets/fonts/roboto/Roboto-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FAC83FBC3AF44945BC2685BE /* Roboto-Bold.ttf */ = {isa = PBXFileReference; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B57A94EA819841A9AA36E86E /* Roboto-Black.ttf */ = {isa = PBXFileReference; name = "Roboto-Black.ttf"; path = "../src/assets/fonts/roboto/Roboto-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FAC83FBC3AF44945BC2685BE /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98885502C39FA4E156139522 /* libPods-gymmy.a in Frameworks */,
+				42A391AB64209392846A09FB /* libPods-gymmy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				7241BEBE7CA7E83A74516398 /* libPods-gymmy.a */,
+				5B30BE6061D91E7CAB126B43 /* libPods-gymmy.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,8 +122,8 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CF1C8CD1B32748667B5C402E /* Pods-gymmy.debug.xcconfig */,
-				703C3A8237E3147EAFF031DF /* Pods-gymmy.release.xcconfig */,
+				6813EBF583A975C339F99F92 /* Pods-gymmy.debug.xcconfig */,
+				63845730EFCBA8B2928AE78B /* Pods-gymmy.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -135,13 +135,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "gymmy" */;
 			buildPhases = (
-				9229E57F54F124A9F8793FAD /* [CP] Check Pods Manifest.lock */,
+				CAC9F07C61D8DB389285A520 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				DBF6312ADC6910357920CD2B /* [CP] Embed Pods Frameworks */,
-				2E7821173641009909BD3DB7 /* [CP] Copy Pods Resources */,
+				DA1688FF0F370CA8863C7B48 /* [CP] Embed Pods Frameworks */,
+				1F577276D955809440AFBA7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,7 +220,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"\\\"$WITH_ENVIRONMENT\\\" \\\"$REACT_NATIVE_XCODE\\\"\"\n";
 		};
-		2E7821173641009909BD3DB7 /* [CP] Copy Pods Resources */ = {
+		1F577276D955809440AFBA7B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -237,7 +237,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gymmy/Pods-gymmy-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9229E57F54F124A9F8793FAD /* [CP] Check Pods Manifest.lock */ = {
+		CAC9F07C61D8DB389285A520 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,7 +259,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DBF6312ADC6910357920CD2B /* [CP] Embed Pods Frameworks */ = {
+		DA1688FF0F370CA8863C7B48 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,7 +292,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF1C8CD1B32748667B5C402E /* Pods-gymmy.debug.xcconfig */;
+			baseConfigurationReference = 6813EBF583A975C339F99F92 /* Pods-gymmy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -323,7 +323,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 703C3A8237E3147EAFF031DF /* Pods-gymmy.release.xcconfig */;
+			baseConfigurationReference = 63845730EFCBA8B2928AE78B /* Pods-gymmy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
